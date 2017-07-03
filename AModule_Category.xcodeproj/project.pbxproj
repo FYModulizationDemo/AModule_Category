@@ -15,7 +15,8 @@
 		A1ECC3D11F09EAAF001B4BCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ECC3CF1F09EAAF001B4BCA /* LaunchScreen.storyboard */; };
 		A1ECC3DC1F09EAAF001B4BCA /* AModule_CategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1ECC3DB1F09EAAF001B4BCA /* AModule_CategoryTests.m */; };
 		A1ECC3E71F09EAAF001B4BCA /* AModule_CategoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1ECC3E61F09EAAF001B4BCA /* AModule_CategoryUITests.m */; };
-		A1ECC3F71F09EB19001B4BCA /* AObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A1ECC3F61F09EB19001B4BCA /* AObject.m */; };
+		A1ECC3FA1F09EFA5001B4BCA /* CTMediator+AModule.m in Sources */ = {isa = PBXBuildFile; fileRef = A1ECC3F91F09EFA5001B4BCA /* CTMediator+AModule.m */; };
+		EA2625A2C42BC441BA24425E /* libPods-AModule_Category.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6350046C29B7377F3C3250A /* libPods-AModule_Category.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +53,11 @@
 		A1ECC3E21F09EAAF001B4BCA /* AModule_CategoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AModule_CategoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1ECC3E61F09EAAF001B4BCA /* AModule_CategoryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AModule_CategoryUITests.m; sourceTree = "<group>"; };
 		A1ECC3E81F09EAAF001B4BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1ECC3F51F09EB19001B4BCA /* AObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AObject.h; sourceTree = "<group>"; };
-		A1ECC3F61F09EB19001B4BCA /* AObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AObject.m; sourceTree = "<group>"; };
+		A1ECC3F81F09EFA5001B4BCA /* CTMediator+AModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTMediator+AModule.h"; sourceTree = "<group>"; };
+		A1ECC3F91F09EFA5001B4BCA /* CTMediator+AModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+AModule.m"; sourceTree = "<group>"; };
+		CB94BA76C9491394CA93866D /* Pods-AModule_Category.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AModule_Category.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AModule_Category/Pods-AModule_Category.debug.xcconfig"; sourceTree = "<group>"; };
+		DD9E5379F727864FC45C88CF /* Pods-AModule_Category.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AModule_Category.release.xcconfig"; path = "Pods/Target Support Files/Pods-AModule_Category/Pods-AModule_Category.release.xcconfig"; sourceTree = "<group>"; };
+		F6350046C29B7377F3C3250A /* libPods-AModule_Category.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AModule_Category.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA2625A2C42BC441BA24425E /* libPods-AModule_Category.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		489616BC12697FAEE49E4C75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6350046C29B7377F3C3250A /* libPods-AModule_Category.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A1ECC3B51F09EAAF001B4BCA = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +101,8 @@
 				A1ECC3DA1F09EAAF001B4BCA /* AModule_CategoryTests */,
 				A1ECC3E51F09EAAF001B4BCA /* AModule_CategoryUITests */,
 				A1ECC3BF1F09EAAF001B4BCA /* Products */,
+				AE613C88C8DDCF3802007FD4 /* Pods */,
+				489616BC12697FAEE49E4C75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,10 +162,19 @@
 		A1ECC3F41F09EAD4001B4BCA /* AModule_Category */ = {
 			isa = PBXGroup;
 			children = (
-				A1ECC3F51F09EB19001B4BCA /* AObject.h */,
-				A1ECC3F61F09EB19001B4BCA /* AObject.m */,
+				A1ECC3F81F09EFA5001B4BCA /* CTMediator+AModule.h */,
+				A1ECC3F91F09EFA5001B4BCA /* CTMediator+AModule.m */,
 			);
 			path = AModule_Category;
+			sourceTree = "<group>";
+		};
+		AE613C88C8DDCF3802007FD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB94BA76C9491394CA93866D /* Pods-AModule_Category.debug.xcconfig */,
+				DD9E5379F727864FC45C88CF /* Pods-AModule_Category.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1ECC3EB1F09EAAF001B4BCA /* Build configuration list for PBXNativeTarget "AModule_Category" */;
 			buildPhases = (
+				9CA910A0F2F601286B29577D /* [CP] Check Pods Manifest.lock */,
 				A1ECC3BA1F09EAAF001B4BCA /* Sources */,
 				A1ECC3BB1F09EAAF001B4BCA /* Frameworks */,
 				A1ECC3BC1F09EAAF001B4BCA /* Resources */,
+				0CE4FC0CF18CA10AB5FF4DED /* [CP] Embed Pods Frameworks */,
+				7D338E75063A443FF5792908 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,13 +311,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CE4FC0CF18CA10AB5FF4DED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AModule_Category/Pods-AModule_Category-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D338E75063A443FF5792908 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AModule_Category/Pods-AModule_Category-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CA910A0F2F601286B29577D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A1ECC3BA1F09EAAF001B4BCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1ECC3F71F09EB19001B4BCA /* AObject.m in Sources */,
 				A1ECC3C91F09EAAF001B4BCA /* ViewController.m in Sources */,
+				A1ECC3FA1F09EFA5001B4BCA /* CTMediator+AModule.m in Sources */,
 				A1ECC3C61F09EAAF001B4BCA /* AppDelegate.m in Sources */,
 				A1ECC3C31F09EAAF001B4BCA /* main.m in Sources */,
 			);
@@ -439,6 +514,7 @@
 		};
 		A1ECC3EC1F09EAAF001B4BCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB94BA76C9491394CA93866D /* Pods-AModule_Category.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W9L8829Y3G;
@@ -451,6 +527,7 @@
 		};
 		A1ECC3ED1F09EAAF001B4BCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD9E5379F727864FC45C88CF /* Pods-AModule_Category.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W9L8829Y3G;
@@ -530,6 +607,7 @@
 				A1ECC3ED1F09EAAF001B4BCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1ECC3EE1F09EAAF001B4BCA /* Build configuration list for PBXNativeTarget "AModule_CategoryTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +616,7 @@
 				A1ECC3F01F09EAAF001B4BCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1ECC3F11F09EAAF001B4BCA /* Build configuration list for PBXNativeTarget "AModule_CategoryUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +625,7 @@
 				A1ECC3F31F09EAAF001B4BCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
